@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import MainMenu from "../Components/MainMenu";
+import Quiz from '../Components/Quiz'
+import EndScreen from '../Components/EndScreen'
 
 import "./App.css";
 
@@ -11,6 +13,8 @@ function App() {
       <h2>test</h2>
 
       {gameState === "menu" && <MainMenu />}
+      {gameState === "quiz" && <Quiz />}
+      {gameState === "endScreen" && <EndScreen />}
     </div>
   );
 }

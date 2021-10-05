@@ -2,8 +2,8 @@ import React from 'react'
 
 function MainMenu() {
     return (
-        <div>
-            Main Menu
+        <div className="Menu">
+            <button> Start Quiz </button>
         </div>
     )
 }

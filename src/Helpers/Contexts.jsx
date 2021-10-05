@@ -1,11 +1,3 @@
-import React from 'react'
+import {createContext } from 'react'
 
-function Contexts() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default Contexts
+export const QuizContext = createContext();

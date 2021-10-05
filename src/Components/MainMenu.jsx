@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { QuizContext } from "../Helpers/Contexts";
 
 function MainMenu() {
-    return (
-        <div className="Menu">
-            <button> Start Quiz </button>
-        </div>
-    )
+  const { gameState, setGameState } = useContext(QuizContext);
+
+  return (
+    <div className="Menu">
+      <button
+        onClick={() => {
+          setGameState("quiz");
+        }}
+      >
+        Start Quiz{" "}
+      </button>
+    </div>
+  );
 }
 
-export default MainMenu
+export default MainMenu;
